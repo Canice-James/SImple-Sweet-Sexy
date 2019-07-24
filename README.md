@@ -4,4 +4,4 @@ Made in Jekyll.
 
  Run 
  ``` bundle install ```
-Followed by ``` bundle exec ``` jekyll serve to get started
+Followed by ``` bundle exec jekyll serve ``` to get started
