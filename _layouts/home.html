@@ -10,23 +10,23 @@ layout: default
   </div>
   <div class="container">
     <div class="row">
-      {% for car in site.cars %}
+      {% for product in site.products %}
       <div class="col-lg-4 col-md-4">
         <div class="card card-list cars">
-          <a href="/cars/{{car.model}}">
+          <a href="/products/{{product.model}}">
             <div class="card-img">
               <div class="love-badge text-danger"><i class="mdi mdi-heart"></i></div>
               <div class="badge images-badge"><i class="mdi mdi-image-filter"></i> 12</div>
-              <span class="badge badge-primary">For {{ car.retailOption }}</span>
-              <img class="card-img-top" src="assets/img/cars/{{car.imgUrl}}" alt="Card image cap">
+              <span class="badge badge-primary">For {{ product.retailOption }}</span>
+              <img class="card-img-top" src="assets/img/products/{{product.imgUrl}}" alt="Card image cap">
             </div>
             <div class="card-body">
               <h5 class="card-title">
                 <i class="mdi mdi-car"></i>
-                {{ car.name }}
+                {{ product.name }}
               </h5>
               <h2 class="text-primary mb-0 mt-3">
-                {{car.amount}} <small>/{{car.period}}</small>
+                {{product.amount}} <small>/{{product.period}}</small>
               </h2>
             </div>
             <!-- <div class="card-footer">
