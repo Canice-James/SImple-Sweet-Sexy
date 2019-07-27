@@ -1,13 +1,32 @@
-  <!-- Bootstrap core JavaScript -->
-  <script src="{{vendor/jquery/jquery.min.js | relative_url}}"></script>
-  <script src="{{vendor/bootstrap/js/bootstrap.bundle.js | relative_url}}"></script>
-  <script src="{{vendor/jquery-ui-bootstrap/js/jquery-ui-1.9.2.custom.min.JS | relative_url}}"></script>
 
-  <!-- Contact form JavaScript -->
-  <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-  <script src="{{assets/js/jqBootstrapValidation.js | relative_url}}"></script>
-  <script src="{{assets/js/contact_me.js | relative_url}}"></script>
-  <!-- select2 Js -->
-  <script src="{{vendor/select2/js/select2.min.js | relative_url}}"></script>
-  <!-- Custom -->
-  <script src="{{assets/js/custom.js | relative_url}}"></script>
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up bgcolor"></div>
+
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/plugins.js"></script>
+
+	<!-- Photograph Hover Plugin
+	============================================= -->
+	<script src="demos/writer/js/hover3d.js" ></script>
+
+	<!-- Menu Open Plugin
+	============================================= -->
+	<script src="assets/js/menu-easing.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="assets/js/functions.js"></script>
+
+	<script>
+
+		// Hover Script
+		jQuery(".img-hover-wrap").hover3d({
+			selector: ".img-hover-card",
+			shine: false,
+		});
+
+	</script>

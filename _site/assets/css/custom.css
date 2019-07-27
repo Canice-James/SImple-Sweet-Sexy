@@ -1,21 +1,9 @@
-.home-slider .card-img-top {
-  object-fit: contain;
-  width: 100%;
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
-  height: 300px;
-}
+/* ----------------------------------------------------------------
+	Custom CSS
 
-.cars .card-img-top {
-  object-fit: cover;
-  width: 100%;
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
-  height: 190px;
-}
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
 
-.ui-datepicker td .ui-state-hover {
-  color: #ffffff;
-  background: #FE0002 !important;
-  background-color: #FE0002 !important; 
-}
+
+

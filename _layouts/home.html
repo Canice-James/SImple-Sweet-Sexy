@@ -2,233 +2,605 @@
 layout: default
 ---
 
-<!-- Properties List -->
-<section id="cars" class="section-padding">
-  <div class="section-title text-center mb-5">
-    <h2>Latest Vehicles</h2>
-    <p class="text-gray-200">Our catalog of cars</p>
-  </div>
-  <div class="container">
-    <div class="row">
-      {% for product in site.products %}
-      <div class="col-lg-4 col-md-4">
-        <div class="card card-list cars">
-          <a href="/products/{{product.model}}">
-            <div class="card-img">
-              <div class="love-badge text-danger"><i class="mdi mdi-heart"></i></div>
-              <div class="badge images-badge"><i class="mdi mdi-image-filter"></i> 12</div>
-              <span class="badge badge-primary">For {{ product.retailOption }}</span>
-              <img class="card-img-top" src="assets/img/products/{{product.imgUrl}}" alt="Card image cap">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">
-                <i class="mdi mdi-car"></i>
-                {{ product.name }}
-              </h5>
-              <h2 class="text-primary mb-0 mt-3">
-                {{product.amount}} <small>/{{product.period}}</small>
-              </h2>
-            </div>
-            <!-- <div class="card-footer">
-                  <span><i class="mdi mdi-sofa"></i> Beds : <strong>3</strong></span>
-                  <span><i class="mdi mdi-scale-bathroom"></i> Baths : <strong>2</strong></span>
-                  <span><i class="mdi mdi-move-resize-variant"></i> Area : <strong>587 sq ft</strong></span>
-                </div> -->
-          </a>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-<!-- End Properties List -->
-<!-- Properties by City -->
-<section class="section-padding bg-dark-light">
-  <div class="section-title text-center mb-5">
-    <h2>The Yamagin Way</h2>
-    <p class="text-gray-200">Learn about the mission, people and values that drive Yamagin.</p>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-8">
-        <div class="card bg-dark text-white card-overlay">
-          <a href="#">
-            <img class="card-img" src="assets/img/us/4.jpg" alt="Card image">
-            <div class="card-img-overlay">
-              <h3 class="card-title text-white">The Story</h3>
-              <p class="card-text text-white">28 Pictures</p>
-            </div>
-          </a>
 
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4">
-        <div class="card bg-dark text-white card-overlay">
-          <a href="#">
-            <img class="card-img" src="assets/img/us/2.jpg" alt="Card image">
-            <div class="card-img-overlay">
-              <h3 class="card-title text-white">The Brand</h3>
-              <p class="card-text text-white">8 Pictures</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 col-md-4">
-        <div class="card bg-dark text-white card-overlay">
-          <a href="#">
-            <img class="card-img" src="assets/img/us/1.jpg" alt="Card image">
-            <div class="card-img-overlay">
-              <h3 class="card-title text-white">The Team</h3>
-              <p class="card-text text-white">16 Pictures</p>
-            </div>
-          </a>
+<!-- Page Loader, stretched (body)
+============================================= -->
+<body class="stretched" data-loader-html="<div><img src='/images/icons/loader.svg' alt='Loader'></div>">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
 
 
-        </div>
-      </div>
-      <div class="col-lg-8 col-md-8">
-        <div class="card bg-dark text-white card-overlay">
-          <a href="#">
-            <img class="card-img" src="assets/img/us/3.jpg" alt="Card image">
-            <div class="card-img-overlay">
-              <h3 class="card-title text-white">Inventory</h3>
-              <p class="card-text text-white">6 Pictures</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Properties by City -->
-<!-- Trusted Agents -->
-<section class="section-padding">
-  <div class="section-title text-center mb-5">
-    <h2>Trusted Agents</h2>
-    <p class="text-gray-200">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-4">
-        <div class="agents-card text-center">
-          <img class="img-fluid mb-4" src="assets/img/user/1.jpg" alt="">
-          <p class="mb-4 text-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has
-            been.</p>
-          <h6 class="mb-0 text-primary">- Stave Martin
-            <span class="star-rating">
-              <i class="mdi mdi-star text-warning"></i>
-              <i class="mdi mdi-star text-warning"></i>
-              <i class="mdi mdi-star text-warning"></i>
-              <i class="mdi mdi-star text-warning"></i>
-              <i class="mdi mdi-star-half text-warning"></i>
-            </span>
-          </h6>
-          <small>Buying Agent</small>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4">
-        <div class="agents-card text-center">
-          <img class="img-fluid mb-4" src="assets/img/user/2.jpg" alt="">
-          <p class="mb-4 text-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has
-            been.</p>
-          <h6 class="mb-0 text-primary">- Mark Smith
-            <span class="star-rating">
-              <i class="mdi mdi-star text-warning"></i>
-              <i class="mdi mdi-star text-warning"></i>
-              <i class="mdi mdi-star text-warning"></i>
-              <i class="mdi mdi-star text-warning"></i>
-              <i class="mdi mdi-star-half text-warning"></i>
-            </span>
-          </h6>
-          <small>Selling Agent</small>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4">
-        <div class="agents-card text-center">
-          <img class="img-fluid mb-4" src="assets/img/user/3.jpg" alt="">
-          <p class="mb-4 text-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has
-            been.</p>
-          <h6 class="mb-0 text-primary">- Ryan Printz
-            <span class="star-rating">
-              <i class="mdi mdi-star text-warning"></i>
-              <i class="mdi mdi-star text-warning"></i>
-              <i class="mdi mdi-star text-warning"></i>
-              <i class="mdi mdi-star text-warning"></i>
-              <i class="mdi mdi-star-half text-warning"></i>
-            </span>
-          </h6>
-          <small>Real Estate Broker</small>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Trusted Agents -->
-<!-- Blog -->
-<!-- <section class="section-padding border-top">
-  <div class="section-title text-center mb-5">
-    <h2>Blogs We Wrote For You</h2>
-    <p class="text-gray-200">Lorem ipsum dolor sit amet.</p>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-4">
-        <div class="card blog-card">
-          <a href="#">
-            <img class="card-img-top" src="assets/img/blog/1.png" alt="Card image cap">
-            <div class="card-body">
-              <span class="badge badge-success">House/Villa</span>
-              <h6>Possimus aut mollitia eum ipsum</h6>
-              <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum
-                ipsum fugiat odio officiis odit.</p>
-            </div>
-            <div class="card-footer">
-              <p class="mb-0"><img class="rounded-circle" src="assets/img/user/3.jpg" alt="Card image cap"> <strong>Rahul
-                  Yadav</strong> On October 03, 2018</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4">
-        <div class="card blog-card">
-          <a href="#">
-            <img class="card-img-top" src="assets/img/blog/2.png" alt="Card image cap">
-            <div class="card-body">
-              <span class="badge badge-danger">Shop/Showroom</span>
-              <h6>Consectetur adipisicing elit</h6>
-              <p class="mb-0">Cnsectetur ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia
-                eum ipsum fugiat odio officiis odit.</p>
-            </div>
-            <div class="card-footer">
-              <p class="mb-0"><img class="rounded-circle" src="assets/img/user/2.jpg" alt="Card image cap"> <strong>Rahul
-                  Yadav</strong> On October 05, 2018</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4">
-        <div class="card blog-card">
-          <a href="#">
-            <img class="card-img-top" src="assets/img/blog/3.png" alt="Card image cap">
-            <div class="card-body">
-              <span class="badge badge-info">Industrial Building</span>
-              <h6>Fugiat odio officiis odit</h6>
-              <p class="mb-0">Mollitia ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum
-                ipsum fugiat odio officiis odit.</p>
-            </div>
-            <div class="card-footer">
-              <p class="mb-0"><img class="rounded-circle" src="assets/img/user/1.jpg" alt="Card image cap"> <strong>Rahul
-                  Yadav</strong> On October 06, 2018</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- End Blog -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content" class="clearfix">
+
+			<div class="content-wrap notoppadding">
+
+				<!-- Flip Card Sections
+				============================================= -->
+				<div class="section notopmargin">
+
+					<div class="container clearfix">
+						<div class="row align-items-center justify-content-between">
+
+							<div class="col-lg-4 parallax" data-bottom-top="margin-top:-50px" data-top-bottom="margin-top:50px">
+								<small class="text-muted uppercase t300 ls4 mb-1 d-block">Experience</small>
+								<h2 class="t700 ls0 mb-4" style="font-size: 38px;">I have been taking photographs for the last 7 years.</h2>
+								<p class="text-muted" style="font-size: 16px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur blanditiis saepe dolore tempora nihil praesentium dolorum unde, earum, nostrum odit?</p>
+							</div>
+
+							<div class="col-lg-7">
+								<div class="row">
+									<div class="col-sm-6">
+										<!-- Flip Card
+										============================================= -->
+										<div class="flip-card">
+											<div class="front no-after" style="background-color: #F9F9F9">
+												<div class="inner">
+													<div class="feature-box media-box">
+														<div class="fbox-icon position-relative mb-4" style="width: 38px;height: 38px">
+															<a href="#">
+																<img src="assets/images/icons/camera1-dark.svg" class="noradius nobg tleft" alt="">
+															</a>
+														</div>
+														<div class="fbox-desc">
+															<h3 class="t400 nott">Wild Photography</h3>
+															<p class="text-muted t500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="back dark" style="background-image: url('/assets/images/features/1-1.jpg')">
+												<div class="inner mt-3">
+													<h4 class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit.</h4>
+													<a href="#" class="button button-change ohidden rounded nott t300 m-0">
+														<span>View Photos</span>
+														<span>View Photos</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 mb-5">
+										<!-- Flip Card
+										============================================= -->
+										<div class="flip-card">
+											<div class="front no-after" style="background-color: #F9F9F9">
+												<div class="inner">
+													<div class="feature-box media-box">
+														<div class="fbox-icon position-relative mb-4" style="width: 38px;height: 38px">
+															<a href="#">
+																<img src="assets/images/icons/travel-dark.svg" class="noradius nobg tleft" alt="">
+															</a>
+														</div>
+														<div class="fbox-desc">
+															<h3 class="t400 nott">Travel Blog</h3>
+															<p class="text-muted t500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="back dark" style="background-image: url('/assets/images/features/2.jpg')">
+												<div class="inner mt-3">
+													<h4 class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit.</h4>
+													<a href="#" class="button button-change ohidden rounded nott t300 m-0">
+														<span>View Photos</span>
+														<span>View Photos</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 mb-5">
+										<!-- Flip Card
+										============================================= -->
+										<div class="flip-card">
+											<div class="front no-after" style="background-color: #F9F9F9">
+												<div class="inner">
+													<div class="feature-box media-box">
+														<div class="fbox-icon position-relative mb-4" style="width: 38px;height: 38px">
+															<a href="#">
+																<img src="assets/images/icons/wedding-dark.svg" class="noradius nobg tleft" alt="">
+															</a>
+														</div>
+														<div class="fbox-desc">
+															<h3 class="t400 nott">Wedding Shoots</h3>
+															<p class="text-muted t500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="back dark" style="background-image: url('/assets/images/features/3.jpg')">
+												<div class="inner mt-3">
+													<h4 class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit.</h4>
+													<a href="#" class="button button-change ohidden rounded nott t300 m-0">
+														<span>View Photos</span>
+														<span>View Photos</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<!-- Flip Card
+										============================================= -->
+										<div class="flip-card">
+											<div class="front no-after" style="background-color: #F9F9F9">
+												<div class="inner">
+													<div class="feature-box media-box">
+														<div class="fbox-icon position-relative mb-4" style="width: 38px;height: 38px">
+															<a href="#">
+																<img src="assets/images/icons/camera2-dark.svg" class="noradius nobg tleft" alt="">
+															</a>
+														</div>
+														<div class="fbox-desc">
+															<h3 class="t400 nott">Candid Moments</h3>
+															<p class="text-muted t500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="back dark" style="background-image: url('/assets/images/features/4.jpg')">
+												<div class="inner mt-3">
+													<h4 class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit.</h4>
+													<a href="#" class="button button-change ohidden rounded nott t300 m-0">
+														<span>View Photos</span>
+														<span>View Photos</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<!-- Section Photographs
+				============================================= -->
+				<div class="section nobg">
+
+					<div class="container">
+
+						<div class="col-lg-6 offset-lg-1 mb-5">
+							<small class="text-muted uppercase t300 ls3 d-block">Some of Featured Pictures</small>
+							<h2 class="t700 ls0 mb-3" style="font-size: 46px;">See what I Did.</h2>
+							<p class="text-muted" style="font-size: 16px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur blanditiis saepe dolore tempora nihil praesentium dolorum unde, earum, nostrum odit?</p>
+						</div>
+
+						<div class="row grid-container clearfix" style="overflow: visible;">
+
+							<!-- Photographs
+							============================================= -->
+							<div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+								<div class="img-hover-card">
+									<a href="assets/images/album/1.jpg" data-lightbox="image"><img src="assets/images/album/1.jpg" alt=""></a>
+									<div class="img-hover-detail">
+										<small class="text-light ls1 t300">Travel</small>
+										<h3 class="img-hover-title"><a href="#">Railway Station</a></h3>
+										<div class="img-link"><a href="#"><i class="icon-line-arrow-right"></i></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Photographs
+							============================================= -->
+							<div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+								<div class="img-hover-card">
+									<a href="assets/images/album/2.jpg" data-lightbox="image"><img src="assets/images/album/2.jpg" alt=""></a>
+									<div class="img-hover-detail">
+										<small class="text-light ls1 t300">Travel</small>
+										<h3 class="img-hover-title"><a href="#">Mt. Batur</a></h3>
+										<div class="img-link"><a href="#"><i class="icon-line-arrow-right"></i></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Photographs
+							============================================= -->
+							<div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+								<div class="img-hover-card">
+									<a href="assets/images/album/3.jpg" data-lightbox="image"><img src="assets/images/album/3.jpg" alt=""></a>
+									<div class="img-hover-detail">
+										<small class="text-light ls1 t300">Travel</small>
+										<h3 class="img-hover-title"><a href="#">Bali, Indonesia</a></h3>
+										<div class="img-link"><a href="#"><i class="icon-line-arrow-right"></i></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Photographs
+							============================================= -->
+							<div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+								<div class="img-hover-card">
+									<a href="assets/images/album/4.jpg" data-lightbox="image"><img src="assets/images/album/4.jpg" alt=""></a>
+									<div class="img-hover-detail">
+										<small class="text-light ls1 t300">Wedding</small>
+										<h3 class="img-hover-title"><a href="#">Ms. Charle's Wedding</a></h3>
+										<div class="img-link"><a href="#"><i class="icon-line-arrow-right"></i></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Photographs
+							============================================= -->
+							<div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+								<div class="img-hover-card">
+									<a href="assets/images/album/5.jpg" data-lightbox="image"><img src="assets/images/album/5.jpg" alt=""></a>
+									<div class="img-hover-detail">
+										<small class="text-light ls1 t300">Wedding</small>
+										<h3 class="img-hover-title"><a href="#">Romantic Moments</a></h3>
+										<div class="img-link"><a href="#"><i class="icon-line-arrow-right"></i></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Photographs
+							============================================= -->
+							<div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+								<div class="img-hover-card">
+									<a href="assets/images/album/6.jpg" data-lightbox="image"><img src="assets/images/album/6.jpg" alt=""></a>
+									<div class="img-hover-detail">
+										<small class="text-light ls1 t300">Travel</small>
+										<h3 class="img-hover-title"><a href="#">Surfing on Sunset</a></h3>
+										<div class="img-link"><a href="#"><i class="icon-line-arrow-right"></i></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Photographs
+							============================================= -->
+							<div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+								<div class="img-hover-card">
+									<a href="assets/images/album/7.jpg" data-lightbox="image"><img src="assets/images/album/7.jpg" alt=""></a>
+									<div class="img-hover-detail">
+										<small class="text-light ls1 t300">Candid</small>
+										<h3 class="img-hover-title"><a href="#">Black &amp; White</a></h3>
+										<div class="img-link"><a href="#"><i class="icon-line-arrow-right"></i></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Photographs
+							============================================= -->
+							<div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+								<div class="img-hover-card">
+									<a href="assets/images/album/8.jpg" data-lightbox="image"><img src="assets/images/album/8.jpg" alt=""></a>
+									<div class="img-hover-detail">
+										<small class="text-light ls1 t300">Candid</small>
+										<h3 class="img-hover-title"><a href="#">Reading Book</a></h3>
+										<div class="img-link"><a href="#"><i class="icon-line-arrow-right"></i></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Photographs
+							============================================= -->
+							<div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+								<div class="img-hover-card">
+									<a href="assets/images/album/9.jpg" data-lightbox="image"><img src="assets/images/album/9.jpg" alt=""></a>
+									<div class="img-hover-detail">
+										<small class="text-light ls1 t300">Random</small>
+										<h3 class="img-hover-title"><a href="#">Little Flubby</a></h3>
+										<div class="img-link"><a href="#"><i class="icon-line-arrow-right"></i></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Photographs
+							============================================= -->
+							<div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+								<div class="img-hover-card">
+									<a href="assets/images/album/10.jpg" data-lightbox="image"><img src="assets/images/album/10.jpg" alt=""></a>
+									<div class="img-hover-detail">
+										<small class="text-light ls1 t300">Potrait</small>
+										<h3 class="img-hover-title"><a href="#">Model Shoot</a></h3>
+										<div class="img-link"><a href="#"><i class="icon-line-arrow-right"></i></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Photographs
+							============================================= -->
+							<div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+								<div class="img-hover-card">
+									<a href="assets/images/album/11.jpg" data-lightbox="image"><img src="assets/images/album/11.jpg" alt=""></a>
+									<div class="img-hover-detail">
+										<small class="text-light ls1 t300">Fashion</small>
+										<h3 class="img-hover-title"><a href="#">Beach Shoot</a></h3>
+										<div class="img-link"><a href="#"><i class="icon-line-arrow-right"></i></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Photographs
+							============================================= -->
+							<div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+								<div class="img-hover-card">
+									<a href="assets/images/album/12.jpg" data-lightbox="image"><img src="assets/images/album/12.jpg" alt=""></a>
+									<div class="img-hover-detail">
+										<small class="text-light ls1 t300">Model</small>
+										<h3 class="img-hover-title"><a href="#">Modelling Pics</a></h3>
+										<div class="img-link"><a href="#"><i class="icon-line-arrow-right"></i></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Photographs
+							============================================= -->
+							<div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+								<div class="img-hover-card">
+									<a href="assets/images/album/13.jpg" data-lightbox="image"><img src="assets/images/album/13.jpg" alt=""></a>
+									<div class="img-hover-detail">
+										<small class="text-light ls1 t300">Travel</small>
+										<h3 class="img-hover-title"><a href="#">Street Picture</a></h3>
+										<div class="img-link"><a href="#"><i class="icon-line-arrow-right"></i></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Photographs
+							============================================= -->
+							<div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+								<div class="img-hover-card">
+									<a href="assets/images/album/14.jpg" data-lightbox="image"><img src="assets/images/album/14.jpg" alt=""></a>
+									<div class="img-hover-detail">
+										<small class="text-light ls1 t300">Street</small>
+										<h3 class="img-hover-title"><a href="#">Budapest, Hungry</a></h3>
+										<div class="img-link"><a href="#"><i class="icon-line-arrow-right"></i></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Photographs
+							============================================= -->
+							<div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+								<div class="img-hover-card">
+									<a href="assets/images/album/15.jpg" data-lightbox="image"><img src="assets/images/album/15.jpg" alt=""></a>
+									<div class="img-hover-detail">
+										<small class="text-light ls1 t300">Candid</small>
+										<h3 class="img-hover-title"><a href="#">Street Picture</a></h3>
+										<div class="img-link"><a href="#"><i class="icon-line-arrow-right"></i></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Titles
+						============================================= -->
+						<div class="row mt-5">
+							<div class="col-sm-6 offset-sm-1">
+								<h2 class="t700 ls0 mb-3" style="font-size: 38px;">More Coming Soon..</h2>
+								<p class="text-muted" style="font-size: 16px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur blanditiis saepe dolore tempora nihil praesentium dolorum unde, earum, nostrum odit?</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Counter Section
+				============================================= -->
+				<div class="section" style="background: #FFF url('/assets/images/dots.png') 170% 0% no-repeat / 60%;">
+
+					<div class="container">
+						<div class="row justify-content-between">
+
+							<!-- Counter
+							============================================= -->
+							<div class="col-lg-3 col-md-6 mt-4">
+								<div class="counter counter-large t300"><span data-from="1" data-to="7" data-refresh-interval="100" data-speed="2000"></span>+</div>
+								<h5>years of Experience</h5>
+								<p class="text-muted mb-0 pb-5 border-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur blanditiis saepe dolore tempora.</p>
+							</div>
+
+							<!-- Counter
+							============================================= -->
+							<div class="col-lg-3 col-md-6 mt-4">
+								<div class="counter counter-large t300"><span data-from="10" data-to="114" data-refresh-interval="50" data-speed="2000" data-comma="true"></span>+</div>
+								<h5>Posted Travel Blogs</h5>
+								<p class="text-muted mb-0 pb-5 border-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur blanditiis saepe dolore tempora.</p>
+							</div>
+
+							<!-- Counter
+							============================================= -->
+							<div class="col-lg-3 col-md-6 mt-4">
+								<div class="counter counter-large t300"><span data-from="100" data-to="1034" data-refresh-interval="50" data-speed="2000" data-comma="true"></span>+</div>
+								<h5>Has Photos Published</h5>
+								<p class="text-muted mb-0 pb-5 border-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur blanditiis saepe dolore tempora.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Clients
+				============================================= -->
+				<div class="section nobg">
+
+					<div class="container center">
+
+						<small class="text-muted uppercase t300 ls3">Trusted Partners</small>
+						<h2 class="t700 ls0 mb-5" style="font-size: 46px;">Happy Clients</h2>
+
+						<div class="row">
+							<div class="col-md-10 offset-md-1">
+								<div class="row">
+									<!-- Client
+									============================================= -->
+									<div class="col-md-3 col-6">
+										<a href="#"><img class="p-4" src="assets/images/clients/light/1.png" alt="" class="clients"></a>
+									</div>
+									<!-- Client
+									============================================= -->
+									<div class="col-md-3 col-6">
+										<a href="#"><img class="p-4" src="assets/images/clients/light/2.png" alt="" class="clients"></a>
+									</div>
+									<!-- Client
+									============================================= -->
+									<div class="col-md-3 col-6">
+										<a href="#"><img class="p-4" src="assets/images/clients/light/3.png" alt="" class="clients"></a>
+									</div>
+									<!-- Client
+									============================================= -->
+									<div class="col-md-3 col-6">
+										<a href="#"><img class="p-4" src="assets/images/clients/light/4.png" alt="" class="clients"></a>
+									</div>
+									<!-- Client
+									============================================= -->
+									<div class="col-md-3 col-6">
+										<a href="#"><img class="p-4" src="assets/images/clients/light/5.png" alt="" class="clients"></a>
+									</div>
+									<!-- Client
+									============================================= -->
+									<div class="col-md-3 col-6">
+										<a href="#"><img class="p-4" src="assets/images/clients/light/6.png" alt="" class="clients"></a>
+									</div>
+									<!-- Client
+									============================================= -->
+									<div class="col-md-3 col-6">
+										<a href="#"><img class="p-4" src="assets/images/clients/light/7.png" alt="" class="clients"></a>
+									</div>
+									<!-- Client
+									============================================= -->
+									<div class="col-md-3 col-6">
+										<a href="#"><img class="p-4" src="assets/images/clients/light/8.png" alt="" class="clients"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="button button-change button-large button-rounded nott t300 mt-4 ml-0">
+							<span>View more Clients <i class="icon-line-arrow-right"></i></span>
+							<span>View more Clients <i class="icon-line-arrow-right"></i></span>
+						</a>
+					</div>
+				</div>
+
+				<!-- Service Section
+				============================================= -->
+				<div class="section" style="padding: 140px 0;">
+					<div class="container">
+
+						<div class="col-sm-6 mb-5">
+							<small class="text-muted uppercase t300 ls3 d-block">Steps of Works</small>
+							<h2 class="t700 ls0 mb-3" style="font-size: 46px;">See How I Do.</h2>
+							<p class="text-muted" style="font-size: 16px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur blanditiis saepe dolore tempora nihil praesentium dolorum unde, earum, nostrum odit?</p>
+						</div>
+
+						<div class="row clearfix">
+							<!-- Card 1
+							============================================= -->
+							<div class="col-lg-4 col-md-6 mt-3">
+								<div class="card shadow-sm d-flex align-items-end flex-column p-3" style="height: 450px; background-color: #FFF; border: 1px solid #FFF">
+									<div></div>
+									<div class="mt-auto">
+										<div class="card-body">
+											<img src="assets/images/icons/shutter.svg" width="40" alt="" class="mb-4">
+											<h4 class="card-title t400">Updated Lenses:</h4>
+											<p class="card-text mb-0 mt-2 t300">Objectively productivate interoperable process improvements after team building testing procedures. Distinctively architect resource-leveling portals.</p><br>
+											<p class="card-text mb-0 t300">Objectively productivate interoperable process improvements.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Card 2
+							============================================= -->
+							<div class="col-lg-4 col-md-6 mt-3">
+								<div class="card shadow-sm d-flex align-items-end flex-column p-3" style="height: 450px; background-color: #FFF; border: 1px solid #FFF">
+									<div></div>
+									<div class="mt-auto">
+										<div class="card-body">
+											<img src="assets/images/icons/video-camera.svg" width="40" alt="" class="mb-4">
+											<h4 class="card-title t400">Film Making:</h4>
+											<p class="card-text mb-0 mt-2 t300">Objectively productivate interoperable process improvements.</p><br>
+											<p class="card-text mb-0 t300">Objectively productivate interoperable process improvements after team building testing procedures. Distinctively architect resource-leveling portals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Card 3
+							============================================= -->
+							<div class="col-lg-4 col-md-6 mt-3">
+								<div class="card shadow-sm d-flex align-items-end flex-column p-3" style="height: 450px; background-color: #FFF; border: 1px solid #FFF">
+									<div></div>
+									<div class="mt-auto">
+										<div class="card-body">
+											<div class="d-flex align-items-center mb-4">
+												<span><img src="assets/images/icons/lr.svg" width="35" alt=""></span>
+												<span class="px-3 h6 m-0 t300">&amp;</span>
+												<span><img src="assets/images/icons/psd.svg" width="35" alt=""></span>
+											</div>
+											<h4 class="card-title t400">Most Edited Tools:</h4>
+											<p class="card-text mb-0 mt-2 t300">Objectively productivate interoperable process improvements.</p><br>
+											<p class="card-text mb-0 t300">Objectively productivate interoperable process improvements after team building testing procedures. Distinctively architect resource-leveling portals.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<!-- Contact Section
+				============================================= -->
+				<div class="section nobottommargin nobg">
+					<div class="container">
+
+						<div class="row justify-content-between mt-5">
+
+							<!-- Heading Title
+							============================================= -->
+							<div class="col-md-6">
+								<small class="text-muted uppercase t300 ls3 d-block">Let's Say Hi!</small>
+								<h2 class="t700 ls0 mb-3" style="font-size: 64px; line-height: 1.2">Contact Me Here.</h2>
+								<p class="text-muted" style="font-size: 16px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur blanditiis saepe dolore tempora nihil praesentium dolorum unde, earum, nostrum odit?</p>
+								<div class="d-flex align-items-center mt-4">
+									<a href="#" class="button button-change button-large button-rounded nott t300 m-0 ohidden">
+										<span><i class="icon-line2-envelope"></i> Contact Us</span>
+										<span><i class="icon-line2-envelope"></i> Contact Us</span>
+									</a>
+									<a href="http://facebook.com/semicolonweb" target="_blank" class="my-0 ml-3 social-icon inline-block si-small si-borderless si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a href="http://twitter.com/__semicolon" target="_blank" class="my-0 ml-1 social-icon inline-block si-small si-borderless si-twitter">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									</a>
+									<a href="http://instagram.com/semicolonweb" target="_blank" class="my-0 ml-1 social-icon inline-block si-small si-borderless si-instagram">
+										<i class="icon-instagram"></i>
+										<i class="icon-instagram"></i>
+									</a>
+								</div>
+							</div>
+
+							<!-- Testimonials
+							============================================= -->
+							<div class="col-md-5 mt-5 mt-md-0">
+								<h5 class="pl-4 t400">What Clients Says:</h5>
+								<div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget pl-4" data-margin="0" data-nav="false" data-pagi="false" data-items="1" data-autoplay="6000" data-loop="true" data-animate-in="fadeIn">
+
+									<div class="oc-item">
+										<div class="testimonial nobg noshadow noborder p-3">
+											<div class="testi-content">
+												<p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum repellendus!</p>
+												<div class="testi-meta ls1 mt-3 mb-0"> Fig Nelson</div>
+											</div>
+										</div>
+									</div>
+									<div class="oc-item">
+										<div class="testimonial nobg noshadow noborder p-3">
+											<div class="testi-content">
+												<p>Completely e-enable premier infomediaries and long-term high-impact process improvements. Completely provide access to B2C.</p>
+												<div class="testi-meta ls1 mt-3 mb-0"> Bailey Wonger</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section><!-- #content end -->
+
+
+
+	</div><!-- #wrapper end -->
+
