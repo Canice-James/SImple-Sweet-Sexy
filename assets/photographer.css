@@ -516,3 +516,14 @@ body.dark,
 }
 
 .dark .dark-mode span { color: #FFF; }
+
+
+
+body {
+	background-color: #e17c7c;
+}
+
+
+#content {
+	background-color: #87ceeb;
+}
