@@ -46,30 +46,30 @@
   rel="stylesheet"
   type="text/css"
 />
-<link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css" />
-<link rel="stylesheet" href="assets/style.css" type="text/css" />
-<link rel="stylesheet" href="assets/css/dark.css" type="text/css" />
+<link rel="stylesheet" href="/assets/css/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="/assets/style.css" type="text/css" />
+<link rel="stylesheet" href="/assets/css/dark.css" type="text/css" />
 
-<link rel="stylesheet" href="assets/css/font-icons.css" type="text/css" />
-<link rel="stylesheet" href="one-page/css/et-line.css" type="text/css" />
-<link rel="stylesheet" href="assets/css/animate.css" type="text/css" />
-<link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css" />
+<link rel="stylesheet" href="/assets/css/font-icons.css" type="text/css" />
+<link rel="stylesheet" href="/one-page/css/et-line.css" type="text/css" />
+<link rel="stylesheet" href="/assets/css/animate.css" type="text/css" />
+<link rel="stylesheet" href="/assets/css/magnific-popup.css" type="text/css" />
 
-<link rel="stylesheet" type="text/css" href="assets/css/menu.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/menu.css" />
 
-<link rel="stylesheet" href="assets/css/responsive.css" type="text/css" />
+<link rel="stylesheet" href="/assets/css/responsive.css" type="text/css" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <!-- Photographer Specific Stylesheet -->
-<link rel="stylesheet" href="assets/photographer.css" type="text/css" />
+<link rel="stylesheet" href="/assets/photographer.css" type="text/css" />
 <!-- Photographer Specific Fonts -->
-<link rel="stylesheet" href="assets/css/fonts.css" type="text/css" />
+<link rel="stylesheet" href="/assets/css/fonts.css" type="text/css" />
 <!-- / -->
 
 <!-- Photographer Specific Color -->
 <link
   rel="stylesheet"
-  href="assets/css/colors.php?color=e41c34"
+  href="/assets/css/colors.php?color=e41c34"
   type="text/css"
 />
 
@@ -80,7 +80,9 @@
     
   </head>
 
-  <body class="layout--home">
+  <body class="layout--home"
+  class="stretched"
+  data-loader-html="<div><img src='/images/icons/loader.svg' alt='Loader'></div>">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -98,7 +100,7 @@
   <div id="header-wrap">
     <div class="container">
       <a href="demo-photography.html"
-        ><img src="assets/images/logo.png" alt="Canvas Logo" height="100"
+        ><img src="/assets/images/logo.png" alt="Canvas Logo" height="100"
       /></a>
     </div>
     <div>
@@ -193,379 +195,172 @@
 
     <div class="initial-content">
       <!-- Page Loader, stretched (body)
-============================================= -->
+  ============================================= -->
 
-<body
-  class="stretched"
-  data-loader-html="<div><img src='/images/icons/loader.svg' alt='Loader'></div>"
->
-  <!-- Document Wrapper
+<!-- Document Wrapper
   ============================================= -->
-  <div id="wrapper" class="clearfix">
-    <!-- Content
+<div id="wrapper" class="clearfix">
+  <!-- Content
   ============================================= -->
-    <section id="content" class="clearfix">
-      <div class="content-wrap notoppadding">
-        <!-- Flip Card Sections
+  <section id="content" class="clearfix">
+    <div class="content-wrap notoppadding">
+      <!-- Flip Card Sections
   ============================================= -->
-        <div class="section notopmargin">
-          <div class="container clearfix">
-            <div class="justify-content-between">
-            
-              <div class="col-lg-6 offset-md-1 mb-4">
-                <small class="text-muted uppercase t300 ls3 d-block"
-                  >Some of Featured Pictures</small
-                >
-                <h2 class="t700 ls0 mb-3" style="font-size: 46px;">
-                  See what I Did.
-                </h2>
-              </div>
-
-              <div class="row grid-6">
-                <!-- Shop Item 1
-  ============================================= -->
-                <div class="col-lg-2 col-md-3 col-6 px-2">
-                  <div class="product iproduct clearfix">
-                    <div class="product-image">
-                      <a href="#"
-                        ><img
-                          src="assets/images/album/picture.jpg"
-                          alt="Image 1"
-                      /></a>
-                      <a href="#"
-                        ><img
-                          src="assets/images/album/picture.jpg"
-                          alt="Image 1"
-                      /></a>
-                      <div class="sale-flash">Sale!</div>
-                      <div class="product-overlay">
-                        <a href="#" class="add-to-cart"
-                          ><i class="icon-shopping-cart"></i
-                          ><span> Add to Cart</span></a
-                        >
-                        <a
-                          href="demos/shop/ajax/shop-item.html"
-                          class="item-quick-view"
-                          data-lightbox="ajax"
-                          ><i class="icon-line-search"></i
-                          ><span>Quick View</span></a
-                        >
-                      </div>
-                    </div>
-                    <div class="product-desc">
-                      <div class="product-title mb-1">
-                        <h3><a href="#">Light Blue Denim</a></h3>
-                      </div>
-                      <div class="product-price font-primary">
-                        <del class="mr-1">$24.99</del> <ins>$12.49</ins>
-                      </div>
-                      <div class="product-rating">
-                        <i class="icon-star3"></i>
-                        <i class="icon-star3"></i>
-                        <i class="icon-star3"></i>
-                        <i class="icon-star-half-full"></i>
-                        <i class="icon-star-empty"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Shop Item 3
-  ============================================= -->
-                <div class="col-lg-2 col-md-3 col-6 px-2">
-                  <div class="product iproduct clearfix">
-                    <div class="product-image">
-                      <a href="#"
-                        ><img src="assets/images/album/bag.jpg" alt="Image 3"
-                      /></a>
-                      <div class="product-overlay">
-                        <a href="#" class="add-to-cart"
-                          ><i class="icon-shopping-cart"></i
-                          ><span> Add to Cart</span></a
-                        >
-                        <a
-                          href="demos/shop/ajax/shop-item.html"
-                          class="item-quick-view"
-                          data-lightbox="ajax"
-                          ><i class="icon-line-search"></i
-                          ><span>Quick View</span></a
-                        >
-                      </div>
-                    </div>
-                    <div class="sale-flash">Sale!</div>
-                    <div class="product-desc">
-                      <div class="product-title mb-1">
-                        <h3><a href="#">Printed Men Short</a></h3>
-                      </div>
-                      <div class="product-price font-primary">
-                        <del class="mr-1">$41.99</del> <ins>$35.00</ins>
-                      </div>
-                      <div class="product-rating">
-                        <i class="icon-star3"></i>
-                        <i class="icon-star3"></i>
-                        <i class="icon-star3"></i>
-                        <i class="icon-star-empty"></i>
-                        <i class="icon-star-empty"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Shop Item 10
-  ============================================= -->
-                <div class="col-lg-2 col-md-3 col-6 px-2">
-                  <div class="product iproduct clearfix">
-                    <div class="product-image">
-                      <a href="#"
-                        ><img src="assets/images/album/bag.jpg" alt="Image 10"
-                      /></a>
-                      <div class="product-overlay">
-                        <a
-                          href="assets/images/album/bag.jpg"
-                          class="item-quick-view"
-                          data-lightbox="ajax"
-                          ><i class="icon-line-search"></i
-                          ><span>Quick View</span></a
-                        >
-                      </div>
-                    </div>
-                    <div class="sale-flash bg-danger">Out of Stock!</div>
-                    <div class="product-desc">
-                      <div class="product-title mb-1">
-                        <h3><a href="#">Sky Blue Printed Bag</a></h3>
-                      </div>
-                      <div class="product-price font-primary">
-                        <ins>$61.49</ins>
-                      </div>
-                      <div class="product-rating">
-                        <i class="icon-star3"></i>
-                        <i class="icon-star3"></i>
-                        <i class="icon-star3"></i>
-                        <i class="icon-star3"></i>
-                        <i class="icon-star-empty"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Shop Item 1
-  ============================================= -->
-                <div class="col-lg-2 col-md-3 col-6 px-2">
-                  <div class="product iproduct clearfix">
-                    <div class="product-image">
-                      <a href="#"
-                        ><img
-                          src="assets/images/album/picture.jpg"
-                          alt="Image 1"
-                      /></a>
-                      <a href="#"
-                        ><img
-                          src="assets/images/album/picture.jpg"
-                          alt="Image 1"
-                      /></a>
-                      <div class="sale-flash">Sale!</div>
-                      <div class="product-overlay">
-                        <a href="#" class="add-to-cart"
-                          ><i class="icon-shopping-cart"></i
-                          ><span> Add to Cart</span></a
-                        >
-                        <a
-                          href="demos/shop/ajax/shop-item.html"
-                          class="item-quick-view"
-                          data-lightbox="ajax"
-                          ><i class="icon-line-search"></i
-                          ><span>Quick View</span></a
-                        >
-                      </div>
-                    </div>
-                    <div class="product-desc">
-                      <div class="product-title mb-1">
-                        <h3><a href="#">Light Blue Denim</a></h3>
-                      </div>
-                      <div class="product-price font-primary">
-                        <del class="mr-1">$24.99</del> <ins>$12.49</ins>
-                      </div>
-                      <div class="product-rating">
-                        <i class="icon-star3"></i>
-                        <i class="icon-star3"></i>
-                        <i class="icon-star3"></i>
-                        <i class="icon-star-half-full"></i>
-                        <i class="icon-star-empty"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Shop Item 3
-  ============================================= -->
-                <div class="col-lg-2 col-md-3 col-6 px-2">
-                  <div class="product iproduct clearfix">
-                    <div class="product-image">
-                      <a href="#"
-                        ><img src="assets/images/album/bag.jpg" alt="Image 3"
-                      /></a>
-                      <div class="product-overlay">
-                        <a href="#" class="add-to-cart"
-                          ><i class="icon-shopping-cart"></i
-                          ><span> Add to Cart</span></a
-                        >
-                        <a
-                          href="demos/shop/ajax/shop-item.html"
-                          class="item-quick-view"
-                          data-lightbox="ajax"
-                          ><i class="icon-line-search"></i
-                          ><span>Quick View</span></a
-                        >
-                      </div>
-                    </div>
-                    <div class="sale-flash">Sale!</div>
-                    <div class="product-desc">
-                      <div class="product-title mb-1">
-                        <h3><a href="#">Printed Men Short</a></h3>
-                      </div>
-                      <div class="product-price font-primary">
-                        <del class="mr-1">$41.99</del> <ins>$35.00</ins>
-                      </div>
-                      <div class="product-rating">
-                        <i class="icon-star3"></i>
-                        <i class="icon-star3"></i>
-                        <i class="icon-star3"></i>
-                        <i class="icon-star-empty"></i>
-                        <i class="icon-star-empty"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Shop Item 10
-  ============================================= -->
-                <div class="col-lg-2 col-md-3 col-6 px-2">
-                  <div class="product iproduct clearfix">
-                    <div class="product-image">
-                      <a href="#"
-                        ><img src="assets/images/album/bag.jpg" alt="Image 10"
-                      /></a>
-                      <div class="product-overlay">
-                        <a
-                          href="assets/images/album/bag.jpg"
-                          class="item-quick-view"
-                          data-lightbox="ajax"
-                          ><i class="icon-line-search"></i
-                          ><span>Quick View</span></a
-                        >
-                      </div>
-                    </div>
-                    <div class="sale-flash bg-danger">Out of Stock!</div>
-                    <div class="product-desc">
-                      <div class="product-title mb-1">
-                        <h3><a href="#">Sky Blue Printed Bag</a></h3>
-                      </div>
-                      <div class="product-price font-primary">
-                        <ins>$61.49</ins>
-                      </div>
-                      <div class="product-rating">
-                        <i class="icon-star3"></i>
-                        <i class="icon-star3"></i>
-                        <i class="icon-star3"></i>
-                        <i class="icon-star3"></i>
-                        <i class="icon-star-empty"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Section Photographs
-  ============================================= -->
-        <div
-          class="section nobg"
-          style="background: #FFF url('/assets/images/dots.png') 170% 0% no-repeat / 60%;"
-        >
-          <div class="container">
-            <div class="col-lg-6 offset-lg-1 mb-5">
+      <div class="section notopmargin">
+        <div class="container clearfix">
+          <div class="justify-content-between">
+            <div class="col-lg-6 offset-md-1 mb-4">
               <small class="text-muted uppercase t300 ls3 d-block"
                 >Some of Featured Pictures</small
               >
               <h2 class="t700 ls0 mb-3" style="font-size: 46px;">
                 See what I Did.
               </h2>
-              <p class="text-muted" style="font-size: 16px;">
-                Simple ladies, you will be sweet and sexy for him. Love it, take
-                it, wear it and be the centre of his attention.
-              </p>
             </div>
 
-            <div class="row grid-container clearfix" style="overflow: visible;">
-              <!-- Photographs
-  ============================================= -->
-              <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
-                <div class="img-hover-card">
-                  <a href="assets/images/album/suit.jpg" data-lightbox="image"
-                    ><img src="assets/images/album/suit.jpg" alt=""
-                  /></a>
-                  <div class="img-hover-detail">
-                    <small class="text-light ls1 t300">Explore</small>
-                    <h3 class="img-hover-title"><a href="#">Travel</a></h3>
-                    <div class="img-link">
-                      <a href="#"><i class="icon-line-arrow-right"></i></a>
+            <div class="row grid-6">
+
+            
+               
+              <!-- Shop Item 
+                ============================================= -->
+              <div class="col-lg-2 col-md-3 col-6 px-2">
+                <div class="product iproduct clearfix">
+                  <div class="product-image">
+                    <a href="#"
+                      ><img src="assets/images/album/dress.jpg" alt="Image 1"
+                    /></a>
+                    <a href="#"
+                      ><img src="assets/images/album/dress.jpg" alt="Image 1"
+                    /></a>
+                    <div class="sale-flash">Sale!</div>
+                    <div class="product-overlay">
+                      <a href="#" class="add-to-cart"
+                        ><i class="icon-shopping-cart"></i
+                        ><span> Add to Cart</span></a
+                      >
+                      <a
+                        href="products/Jergins"
+                        class="item-quick-view"
+                        data-lightbox="ajax"
+                        ><i class="icon-line-search"></i
+                        ><span>Quick View</span></a
+                      >
                     </div>
+                  </div>
+                  <div class="product-desc">
+                    <div class="product-title mb-1">
+                      <h3><a href="#">Jergins</a></h3>
+                    </div>
+                    <div class="product-price font-primary">
+                      <del class="mr-1"></del> <ins>33.50</ins>
+                    </div>
+                    <!-- <div class="product-rating">
+                      <i class="icon-star3"></i>
+                      <i class="icon-star3"></i>
+                      <i class="icon-star3"></i>
+                      <i class="icon-star-half-full"></i>
+                      <i class="icon-star-empty"></i>
+                    </div> -->
                   </div>
                 </div>
               </div>
-              <!-- Photographs
+            
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section Photographs
   ============================================= -->
-              <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
-                <div class="img-hover-card">
-                  <a href="assets/images/album/dress.jpg" data-lightbox="image"
-                    ><img src="assets/images/album/dress.jpg" alt=""
-                  /></a>
-                  <div class="img-hover-detail">
-                    <small class="text-light ls1 t300">Sexy</small>
-                    <h3 class="img-hover-title"><a href="#">Dresses</a></h3>
-                    <div class="img-link">
-                      <a href="#"><i class="icon-line-arrow-right"></i></a>
-                    </div>
+      <div
+        class="section nobg"
+        style="background: #FFF url('/assets/images/dots.png') 170% 0% no-repeat / 60%;"
+      >
+        <div class="container">
+          <div class="col-lg-6 offset-lg-1 mb-5">
+            <small class="text-muted uppercase t300 ls3 d-block"
+              >Some of Featured Pictures</small
+            >
+            <h2 class="t700 ls0 mb-3" style="font-size: 46px;">
+              See what I Did.
+            </h2>
+            <p class="text-muted" style="font-size: 16px;">
+              Simple ladies, you will be sweet and sexy for him. Love it, take
+              it, wear it and be the centre of his attention.
+            </p>
+          </div>
+
+          <div class="row grid-container clearfix" style="overflow: visible;">
+            <!-- Photographs
+  ============================================= -->
+            <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+              <div class="img-hover-card">
+                <a href="assets/images/album/suit.jpg" data-lightbox="image"
+                  ><img src="assets/images/album/suit.jpg" alt=""
+                /></a>
+                <div class="img-hover-detail">
+                  <small class="text-light ls1 t300">Explore</small>
+                  <h3 class="img-hover-title"><a href="#">Travel</a></h3>
+                  <div class="img-link">
+                    <a href="#"><i class="icon-line-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
-              <!-- Photographs
+            </div>
+            <!-- Photographs
   ============================================= -->
-              <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
-                <div class="img-hover-card">
-                  <a href="assets/images/album/bag.jpg" data-lightbox="image"
-                    ><img src="assets/images/album/bag.jpg" alt=""
-                  /></a>
-                  <div class="img-hover-detail">
-                    <small class="text-light ls1 t300">Exquisite</small>
-                    <h3 class="img-hover-title"><a href="#">Bags</a></h3>
-                    <div class="img-link">
-                      <a href="#"><i class="icon-line-arrow-right"></i></a>
-                    </div>
+            <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+              <div class="img-hover-card">
+                <a href="assets/images/album/dress.jpg" data-lightbox="image"
+                  ><img src="assets/images/album/dress.jpg" alt=""
+                /></a>
+                <div class="img-hover-detail">
+                  <small class="text-light ls1 t300">Sexy</small>
+                  <h3 class="img-hover-title"><a href="#">Dresses</a></h3>
+                  <div class="img-link">
+                    <a href="#"><i class="icon-line-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
-              <!-- Photographs
+            </div>
+            <!-- Photographs
   ============================================= -->
-              <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
-                <div class="img-hover-card">
-                  <a href="assets/images/album/shoe.jpg" data-lightbox="image"
-                    ><img src="assets/images/album/shoe.jpg" alt=""
-                  /></a>
-                  <div class="img-hover-detail">
-                    <small class="text-light ls1 t300">Finely Detailed</small>
-                    <h3 class="img-hover-title"><a href="#">Shoes</a></h3>
-                    <div class="img-link">
-                      <a href="#"><i class="icon-line-arrow-right"></i></a>
-                    </div>
+            <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+              <div class="img-hover-card">
+                <a href="assets/images/album/bag.jpg" data-lightbox="image"
+                  ><img src="assets/images/album/bag.jpg" alt=""
+                /></a>
+                <div class="img-hover-detail">
+                  <small class="text-light ls1 t300">Exquisite</small>
+                  <h3 class="img-hover-title"><a href="#">Bags</a></h3>
+                  <div class="img-link">
+                    <a href="#"><i class="icon-line-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
-              <!-- Photographs
+            </div>
+            <!-- Photographs
   ============================================= -->
-              <!-- <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+            <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+              <div class="img-hover-card">
+                <a href="assets/images/album/shoe.jpg" data-lightbox="image"
+                  ><img src="assets/images/album/shoe.jpg" alt=""
+                /></a>
+                <div class="img-hover-detail">
+                  <small class="text-light ls1 t300">Finely Detailed</small>
+                  <h3 class="img-hover-title"><a href="#">Shoes</a></h3>
+                  <div class="img-link">
+                    <a href="#"><i class="icon-line-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Photographs
+  ============================================= -->
+            <!-- <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
   <div class="img-hover-card">
   <a href="assets/images/album/5.jpg" data-lightbox="image"><img src="assets/images/album/5.jpg" alt=""></a>
   <div class="img-hover-detail">
@@ -575,9 +370,9 @@
   </div>
   </div>
   </div> -->
-              <!-- Photographs
+            <!-- Photographs
   ============================================= -->
-              <!-- <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+            <!-- <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
   <div class="img-hover-card">
   <a href="assets/images/album/6.jpg" data-lightbox="image"><img src="assets/images/album/6.jpg" alt=""></a>
   <div class="img-hover-detail">
@@ -587,9 +382,9 @@
   </div>
   </div>
   </div> -->
-              <!-- Photographs
+            <!-- Photographs
   ============================================= -->
-              <!-- <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+            <!-- <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
   <div class="img-hover-card">
   <a href="assets/images/album/7.jpg" data-lightbox="image"><img src="assets/images/album/7.jpg" alt=""></a>
   <div class="img-hover-detail">
@@ -599,9 +394,9 @@
   </div>
   </div>
   </div> -->
-              <!-- Photographs
+            <!-- Photographs
   ============================================= -->
-              <!-- <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+            <!-- <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
   <div class="img-hover-card">
   <a href="assets/images/album/8.jpg" data-lightbox="image"><img src="assets/images/album/8.jpg" alt=""></a>
   <div class="img-hover-detail">
@@ -611,9 +406,9 @@
   </div>
   </div>
   </div> -->
-              <!-- Photographs
+            <!-- Photographs
   ============================================= -->
-              <!-- <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+            <!-- <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
   <div class="img-hover-card">
   <a href="assets/images/album/9.jpg" data-lightbox="image"><img src="assets/images/album/9.jpg" alt=""></a>
   <div class="img-hover-detail">
@@ -623,9 +418,9 @@
   </div>
   </div>
   </div> -->
-              <!-- Photographs
+            <!-- Photographs
   ============================================= -->
-              <!-- <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+            <!-- <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
   <div class="img-hover-card">
   <a href="assets/images/album/10.jpg" data-lightbox="image"><img src="assets/images/album/10.jpg" alt=""></a>
   <div class="img-hover-detail">
@@ -635,9 +430,9 @@
   </div>
   </div>
   </div> -->
-              <!-- Photographs
+            <!-- Photographs
   ============================================= -->
-              <!-- <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+            <!-- <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
   <div class="img-hover-card">
   <a href="assets/images/album/11.jpg" data-lightbox="image"><img src="assets/images/album/11.jpg" alt=""></a>
   <div class="img-hover-detail">
@@ -647,10 +442,10 @@
   </div>
   </div>
   </div> -->
-              <!-- Photographs
+            <!-- Photographs
   ============================================= -->
-              <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
-                <!-- <div class="img-hover-card">
+            <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+              <!-- <div class="img-hover-card">
   <a href="assets/images/album/12.jpg" data-lightbox="image"><img src="assets/images/album/12.jpg" alt=""></a>
   <div class="img-hover-detail">
   <small class="text-light ls1 t300">Business</small>
@@ -659,9 +454,9 @@
   </div>
   </div>
   </div> -->
-                <!-- Photographs
+              <!-- Photographs
   ============================================= -->
-                <!-- <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+              <!-- <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
   <div class="img-hover-card">
   <a href="assets/images/album/13.jpg" data-lightbox="image"><img src="assets/images/album/13.jpg" alt=""></a>
   <div class="img-hover-detail">
@@ -671,10 +466,10 @@
   </div>
   </div>
   </div> -->
-                <!-- Photographs
+              <!-- Photographs
   ============================================= -->
-                <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
-                  <!-- <div class="img-hover-card">
+              <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+                <!-- <div class="img-hover-card">
   <a href="assets/images/album/14.jpg" data-lightbox="image"><img src="assets/images/album/14.jpg" alt=""></a>
   <div class="img-hover-detail">
   <small class="text-light ls1 t300">Street</small>
@@ -683,129 +478,128 @@
   </div>
   </div>
   </div> -->
-                  <!-- Photographs
+                <!-- Photographs
   ============================================= -->
-                  <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
-                    <!-- <div class="img-hover-card">
+                <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+                  <!-- <div class="img-hover-card">
   <a href="assets/images/album/15.jpg" data-lightbox="image"><img src="assets/images/album/15.jpg" alt=""></a>
   <div class="img-hover-detail">
   <small class="text-light ls1 t300">Candid</small>
   <h3 class="img-hover-title"><a href="#">Street Picture</a></h3> -->
-                    <div class="img-link">
-                      <a href="#"><i class="icon-line-arrow-right"></i></a>
-                    </div>
+                  <div class="img-link">
+                    <a href="#"><i class="icon-line-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!-- Titles
+          <!-- Titles
   ============================================= -->
-            <!-- <div class="row mt-5">
+          <!-- <div class="row mt-5">
   <div class="col-sm-6 offset-sm-1">
   <h2 class="t700 ls0 mb-3" style="font-size: 38px;">More Coming Soon..</h2>
   <p class="text-muted" style="font-size: 16px;"></p>
   </div>
   </div> -->
-          </div>
         </div>
+      </div>
 
-         
+       
 
-        <!-- Contact Section
+      <!-- Contact Section
   ============================================= -->
-        <div class="section nobottommargin ">
-          <div class="container">
-            <div class="row justify-content-between mt-5">
-              <!-- Heading Title
+      <div class="section nobottommargin ">
+        <div class="container">
+          <div class="row justify-content-between mt-5">
+            <!-- Heading Title
   ============================================= -->
-              <div class="col-md-6">
-                <small class="text-muted uppercase t300 ls3 d-block"
-                  >Let's Say Hi!</small
+            <div class="col-md-6">
+              <small class="text-muted uppercase t300 ls3 d-block"
+                >Let's Say Hi!</small
+              >
+              <h2
+                class="t700 ls0 mb-3"
+                style="font-size: 64px; line-height: 1.2"
+              >
+                Contact Me Here.
+              </h2>
+              <p class="text-muted" style="font-size: 16px;">
+                If there are any questions regarding items and stlyes. You can
+                contact me here.
+              </p>
+              <div class="d-flex align-items-center mt-4">
+                <a
+                  href="#"
+                  class="button button-change button-large button-rounded nott t300 m-0 ohidden"
                 >
-                <h2
-                  class="t700 ls0 mb-3"
-                  style="font-size: 64px; line-height: 1.2"
+                  <span><i class="icon-line2-envelope"></i> Contact Us</span>
+                  <span><i class="icon-line2-envelope"></i> Contact Us</span>
+                </a>
+                <a
+                  href="http://facebook.com/semicolonweb"
+                  target="_blank"
+                  class="my-0 ml-3 social-icon inline-block si-small si-borderless si-facebook"
                 >
-                  Contact Me Here.
-                </h2>
-                <p class="text-muted" style="font-size: 16px;">
-                  If there are any questions regarding items and stlyes. You can
-                  contact me here.
-                </p>
-                <div class="d-flex align-items-center mt-4">
-                  <a
-                    href="#"
-                    class="button button-change button-large button-rounded nott t300 m-0 ohidden"
-                  >
-                    <span><i class="icon-line2-envelope"></i> Contact Us</span>
-                    <span><i class="icon-line2-envelope"></i> Contact Us</span>
-                  </a>
-                  <a
-                    href="http://facebook.com/semicolonweb"
-                    target="_blank"
-                    class="my-0 ml-3 social-icon inline-block si-small si-borderless si-facebook"
-                  >
-                    <i class="icon-facebook"></i>
-                    <i class="icon-facebook"></i>
-                  </a>
-                  <a
-                    href="http://twitter.com/__semicolon"
-                    target="_blank"
-                    class="my-0 ml-1 social-icon inline-block si-small si-borderless si-twitter"
-                  >
-                    <i class="icon-twitter"></i>
-                    <i class="icon-twitter"></i>
-                  </a>
-                  <a
-                    href="http://instagram.com/semicolonweb"
-                    target="_blank"
-                    class="my-0 ml-1 social-icon inline-block si-small si-borderless si-instagram"
-                  >
-                    <i class="icon-instagram"></i>
-                    <i class="icon-instagram"></i>
-                  </a>
-                </div>
+                  <i class="icon-facebook"></i>
+                  <i class="icon-facebook"></i>
+                </a>
+                <a
+                  href="http://twitter.com/__semicolon"
+                  target="_blank"
+                  class="my-0 ml-1 social-icon inline-block si-small si-borderless si-twitter"
+                >
+                  <i class="icon-twitter"></i>
+                  <i class="icon-twitter"></i>
+                </a>
+                <a
+                  href="http://instagram.com/semicolonweb"
+                  target="_blank"
+                  class="my-0 ml-1 social-icon inline-block si-small si-borderless si-instagram"
+                >
+                  <i class="icon-instagram"></i>
+                  <i class="icon-instagram"></i>
+                </a>
               </div>
+            </div>
 
-              <!-- Testimonials
+            <!-- Testimonials
   ============================================= -->
-              <div class="col-md-5 mt-5 mt-md-0">
-                <h5 class="pl-4 t400">What Clients Says:</h5>
-                <div
-                  id="oc-testi"
-                  class="owl-carousel testimonials-carousel carousel-widget pl-4"
-                  data-margin="0"
-                  data-nav="false"
-                  data-pagi="false"
-                  data-items="1"
-                  data-autoplay="6000"
-                  data-loop="true"
-                  data-animate-in="fadeIn"
-                >
-                  <div class="oc-item">
-                    <div class="testimonial nobg noshadow noborder p-3">
-                      <div class="testi-content">
-                        <p>
-                          These products are real quality, I gaurentee others
-                          will absolutely love them!
-                        </p>
-                        <div class="testi-meta ls1 mt-3 mb-0">
-                          Samantha Jack
-                        </div>
+            <div class="col-md-5 mt-5 mt-md-0">
+              <h5 class="pl-4 t400">What Clients Says:</h5>
+              <div
+                id="oc-testi"
+                class="owl-carousel testimonials-carousel carousel-widget pl-4"
+                data-margin="0"
+                data-nav="false"
+                data-pagi="false"
+                data-items="1"
+                data-autoplay="6000"
+                data-loop="true"
+                data-animate-in="fadeIn"
+              >
+                <div class="oc-item">
+                  <div class="testimonial nobg noshadow noborder p-3">
+                    <div class="testi-content">
+                      <p>
+                        These products are real quality, I gaurentee others will
+                        absolutely love them!
+                      </p>
+                      <div class="testi-meta ls1 mt-3 mb-0">
+                        Samantha Jack
                       </div>
                     </div>
                   </div>
-                  <div class="oc-item">
-                    <div class="testimonial nobg noshadow noborder p-3">
-                      <div class="testi-content">
-                        <p>
-                          My wife really loved the dress I bought for her
-                          birthday. I'm forever grateful.
-                        </p>
-                        <div class="testi-meta ls1 mt-3 mb-0">
-                          Bailey Wonger
-                        </div>
+                </div>
+                <div class="oc-item">
+                  <div class="testimonial nobg noshadow noborder p-3">
+                    <div class="testi-content">
+                      <p>
+                        My wife really loved the dress I bought for her
+                        birthday. I'm forever grateful.
+                      </p>
+                      <div class="testi-meta ls1 mt-3 mb-0">
+                        Bailey Wonger
                       </div>
                     </div>
                   </div>
@@ -815,11 +609,11 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- #content end -->
-  </div>
-  <!-- #wrapper end -->
-</body>
+    </div>
+  </section>
+  <!-- #content end -->
+</div>
+<!-- #wrapper end -->
 
     </div>
 
@@ -868,20 +662,20 @@
 
 	<!-- External JavaScripts
 	============================================= -->
-	<script src="assets/js/jquery.js"></script>
-	<script src="assets/js/plugins.js"></script>
+	<script src="/assets/js/jquery.js"></script>
+	<script src="/assets/js/plugins.js"></script>
 
 	<!-- Photograph Hover Plugin
 	============================================= -->
-	<script src="demos/writer/js/hover3d.js" ></script>
+	<script src="/demos/writer/js/hover3d.js" ></script>
 
 	<!-- Menu Open Plugin
 	============================================= -->
-	<script src="assets/js/menu-easing.js"></script>
+	<script src="/assets/js/menu-easing.js"></script>
 
 	<!-- Footer Scripts
 	============================================= -->
-	<script src="assets/js/functions.js"></script>
+	<script src="/assets/js/functions.js"></script>
 
 	<script>
 
