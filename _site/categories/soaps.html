@@ -9,15 +9,19 @@
 <meta property="og:type" content="">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Simple Sweet Solutions">
-<meta property="og:title" content="Simple Sweet Solutions">
+<meta property="og:title" content="Soaps">
 <meta property="og:url" content="">
 
 
+  <meta property="og:description" content="Women’s fashion and health online store">
 
 
 
 
 
+
+
+  <meta property="article:published_time" content="2019-08-20T13:21:25-04:00">
 
 
 
@@ -84,7 +88,7 @@
     
   </head>
 
-  <body class="layout--default"
+  <body class="layout--category"
   class="stretched"
   data-loader-html="<div><img src='/images/icons/loader.svg' alt='Loader'></div>">
 
@@ -138,7 +142,7 @@
   
 <!-- <div id="banner">
   <div class="h-100 d-flex justify-content-center" data-bs-parallax-bg="true" style="background-image:url('');background-position:center;background-size:cover;">
-    <h1 class="align-self-center text-center text-light">  </h1>
+    <h1 class="align-self-center text-center text-light"> Soaps </h1>
   </div>
 </div> -->
 
@@ -146,26 +150,175 @@
 
 
     <div class="initial-content">
-      <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+      	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
 
-<div class="container">
-  <h1>404</h1>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+		<!-- Page Title
+		============================================= -->
+		<section id="page-title">
+
+			<div class="container clearfix">
+				<h1> Categories </h1>
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#">Home</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Categories</li>
+				</ol>
+			</div>
+
+		</section><!-- #page-title end -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap">
+
+				<div class="container clearfix">
+
+										<!-- Post Content
+					============================================= -->
+					<div class="postcontent nobottommargin col_last">
+
+						<!-- Shop
+						============================================= -->
+						<div id="shop" class="shop product-3 grid-container clearfix">
+
+							
+               
+              <!-- Shop Item 
+                ============================================= -->
+						
+							<div class="product sf- clearfix">
+								<div class="product-image">
+									<a href="/products/lotion.html"><img src="/assets/images/album/jergens.jpg" alt="Checked Short Dress"></a>
+									<!-- <div class="sale-flash">50% Off*</div> -->
+									<div class="product-overlay">
+										<a href="" class="add-to-cart"><i class="icon-shopping-cart"></i><span> Add to Cart</span></a>
+										<a href="/products/lotion.html" class="item-quick-view" data-lightbox="ajax"><i class="icon-zoom-in2"></i><span> Quick View</span></a>
+									</div>
+								</div>
+								<div class="product-desc center">
+									<div class="product-title"><h3><a href="/products/lotion.html">Jergens</a></h3></div>
+									<div class="product-price"><del></del> <ins class="text-dark">$33.50</ins></div>
+				
+								</div>
+							</div>
+							
+
+
+						</div><!-- #shop end -->
+
+					</div><!-- .postcontent end -->
+
+					<!-- Sidebar
+					============================================= -->
+					<div class="sidebar nobottommargin">
+						<div class="sidebar-widgets-wrap">
+
+							<div class="widget widget-filter-links clearfix">
+
+								<h4>Select Category</h4>
+								<ul class="custom-filter" data-container="#shop" data-active-class="active-filter">
+
+									<li class="widget-filter-reset"><a href="#" data-filter="*">Clear</a></li>
+
+									
+									<li class=""><a href="#" data-filter=".sf-detox" >Detox Facial Scrub Cleansers</a></li>
+									
+									<li class=""><a href="#" data-filter=".sf-skin-care" >Skin Care</a></li>
+									
+									<li class=""><a href="#" data-filter=".sf-perfume" >Perfumes</a></li>
+									
+									<li class="active-filter"><a href="#" data-filter=".sf-soap" >Soaps</a></li>
+									
+								</ul>
+
+							</div>
+
+							<div class="widget widget-filter-links clearfix">
+
+								<h4>Sort By</h4>
+								<ul class="shop-sorting">
+									<li class="widget-filter-reset active-filter"><a href="#" data-sort-by="original-order">Clear</a></li>
+									<li><a href="#" data-sort-by="name">Name</a></li>
+									<li><a href="#" data-sort-by="price_lh">Price: Low to High</a></li>
+									<li><a href="#" data-sort-by="price_hl">Price: High to Low</a></li>
+								</ul>
+
+							</div>
+
+						</div>
+					</div><!-- .sidebar end -->
+
+			</div>
+
+		</section><!-- #content end -->
+
+	
+
+	</div><!-- #wrapper end -->
+
+<script>
+	jQuery(document).ready( function($){
+		$('#shop').isotope({
+			transitionDuration: '0.65s',
+			getSortData: {
+				name: '.product-title',
+				price_lh: function( itemElem ) {
+					if( $(itemElem).find('.product-price').find('ins').length > 0 ) {
+						var price = $(itemElem).find('.product-price ins').text();
+					} else {
+						var price = $(itemElem).find('.product-price').text();
+					}
+
+					priceNum = price.split("$");
+
+					return parseFloat( priceNum[1] );
+				},
+				price_hl: function( itemElem ) {
+					if( $(itemElem).find('.product-price').find('ins').length > 0 ) {
+						var price = $(itemElem).find('.product-price ins').text();
+					} else {
+						var price = $(itemElem).find('.product-price').text();
+					}
+
+					priceNum = price.split("$");
+
+					return parseFloat( priceNum[1] );
+				}
+			},
+			sortAscending: {
+				name: true,
+				price_lh: true,
+				price_hl: false
+			}
+		});
+
+		$('.custom-filter:not(.no-count)').children('li:not(.widget-filter-reset)').each( function(){
+			var element = $(this),
+				elementFilter = element.children('a').attr('data-filter'),
+				elementFilterContainer = element.parents('.custom-filter').attr('data-container');
+
+			elementFilterCount = Number( jQuery(elementFilterContainer).find( elementFilter ).length );
+
+			element.append('<span>'+ elementFilterCount +'</span>');
+
+		});
+
+		$('.shop-sorting li').click( function() {
+			$('.shop-sorting').find('li').removeClass( 'active-filter' );
+			$(this).addClass( 'active-filter' );
+			var sortByValue = $(this).find('a').attr('data-sort-by');
+			$('#shop').isotope({ sortBy: sortByValue });
+			return false;
+		});
+
+		$('#shop').isotope({filter: '.sf-soap'});
+
+	});
+</script>
 
     </div>
 

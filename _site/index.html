@@ -73,9 +73,13 @@
   type="text/css"
 />
 
+<script src="/assets/js/jquery.js"></script>
+
+
 <!-- Document Title
 	============================================= -->
 <title>Simple Sweet Solutions</title>
+
 
     
   </head>
@@ -99,7 +103,7 @@
 <header id="header" class="transparent-header no-sticky">
   <div id="header-wrap">
     <div class="container">
-      <a href="demo-photography.html"
+      <a href="/"
         ><img src="/assets/images/logo.png" alt="Canvas Logo" height="100"
       /></a>
     </div>
@@ -144,9 +148,9 @@
 					<div class="row align-items-center">
 						<div class="col-md-6">
 							<h2 class="text-dark">Simple Sweet Solutions.</h2>
-							<h5 class="t300 ls1" style="opacity: .7">Simple ladies, you will find all your needs, to be the epitome of his dreams.</h5>
+							<h5 class="t300 ls1" style="opacity: .7">For Simple Ladies to find all their essential needs.</h5>
 							<div class="d-flex align-items-center">
-								<a href="#" class="button button-change button-rounded ohidden nott button-large t400 ml-0 mt-4 mb-0">
+								<a href="#products" class="button button-change button-rounded ohidden nott button-large t400 ml-0 mt-4 mb-0">
 									<span>
 										<!-- <i class="icon-line2-envelope t600"> -->
 
@@ -175,7 +179,10 @@
 											<!-- <img src="assets/images/icons/instagram.svg" class="noradius nobg tleft" alt="" style="height: 48px;"> -->
 										</div>
 										<div class="d-block" style="margin: 90px auto"></div>
-										<a href="assets/images/album/picture.jpg" data-lightbox="image"><img src="assets/images/album/picture.jpg" alt=""></a>
+										<a href="" data-lightbox="image"><img src="assets/images/album/perfume.jpg" alt="" style="
+											min-height: 17em;
+											object-fit: cover">
+										</a>
 										<!-- <p class="mb-0 t400">View Our Instagram Stories</p>
 										<h3 class="t500 mt-1 mb-0 capitalize d-flex align-self-end"><a href="http://instagram.com/semicolonweb" target="_blank" class="text-dark">instagram <i class="icon-line-arrow-right t600 position-relative" style="top: 2px"></i></a></h3> --> -->
 									</div>
@@ -206,12 +213,12 @@
     <div class="content-wrap notoppadding">
       <!-- Flip Card Sections
   ============================================= -->
-      <div class="section notopmargin">
+      <div id="products" class="section notopmargin">
         <div class="container clearfix">
           <div class="justify-content-between">
             <div class="col-lg-6 offset-md-1 mb-4">
               <small class="text-muted uppercase t300 ls3 d-block"
-                >Some of Featured Pictures</small
+                >Some of Featured Items</small
               >
               <h2 class="t700 ls0 mb-3" style="font-size: 46px;">
                 Products.
@@ -227,20 +234,20 @@
               <div class="col-lg-2 col-md-3 col-6 px-2">
                 <div class="product iproduct clearfix">
                   <div class="product-image">
-                    <a href="#" 
+                    <a href="/products/lotion.html" 
                       ><img src="assets/images/album/jergens.jpg" alt="Image 1"
                     /></a>
-                    <a href="/products"
+                    <a href="/products/lotion.html"
                       ><img src="assets/images/album/jergens.jpg" alt="Image 1"
                     /></a>
                     <div class="sale-flash">Sale!</div>
                     <div class="product-overlay">
-                      <a href="#" class="add-to-cart"
+                      <a href="" class="add-to-cart"
                         ><i class="icon-shopping-cart"></i
                         ><span> Add to Cart</span></a
                       >
                       <a
-                        href="products/Jergens"
+                        href="/products/lotion.html"
                         class="item-quick-view"
                         data-lightbox="ajax"
                         ><i class="icon-line-search"></i
@@ -248,9 +255,9 @@
                       >
                     </div>
                   </div>
-                  <div class="product-desc">
+                  <div class="product-desc center">
                     <div class="product-title mb-1">
-                      <h3><a href="#">Jergens</a></h3>
+                      <h3><a href="/products/lotion.html">Jergens</a></h3>
                     </div>
                     <div class="product-price font-primary">
                       <del class="mr-1"></del> <ins>33.50</ins>
@@ -282,82 +289,86 @@
         <div class="container">
           <div class="col-lg-6 offset-lg-1 mb-5">
             <small class="text-muted uppercase t300 ls3 d-block"
-              >Some of Featured Pictures</small
+              >What we provide</small
             >
             <h2 class="t700 ls0 mb-3" style="font-size: 46px;">
               Categories.
             </h2>
-            <p class="text-muted" style="font-size: 16px;">
+            <!-- <p class="text-muted" style="font-size: 16px;">
               Simple ladies, you will be sweet and sexy for him. Love it, take
               it, wear it and be the centre of his attention.
-            </p>
+            </p> -->
           </div>
 
           <div class="row grid-container clearfix" style="overflow: visible;">
+
             <!-- Photographs
   ============================================= -->
+            
             <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
               <div class="img-hover-card">
-                <a href="assets/images/album/soap.jpg" data-lightbox="image"
+                <a href="/categories/soaps.html" 
                   ><img src="assets/images/album/soap.jpg" alt=""
                 /></a>
                 <div class="img-hover-detail">
                   <small class="text-light ls1 t300">Scented</small>
                   <h3 class="img-hover-title"><a href="#">Soaps</a></h3>
                   <div class="img-link">
-                    <a href="#"><i class="icon-line-arrow-right"></i></a>
+                    <a href="/categories/soaps.html"><i class="icon-line-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Photographs
-  ============================================= -->
+            
             <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
               <div class="img-hover-card">
-                <a href="assets/images/album/body lotion.jpg" data-lightbox="image"
-                  ><img src="assets/images/album/body lotion.jpg" alt=""
-                /></a>
-                <div class="img-hover-detail">
-                  <small class="text-light ls1 t300">Sweet</small>
-                  <h3 class="img-hover-title"><a href="#">Body Lotions</a></h3>
-                  <div class="img-link">
-                    <a href="#"><i class="icon-line-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Photographs
-  ============================================= -->
-            <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
-              <div class="img-hover-card">
-                <a href="assets/images/album/perfume.jpg" data-lightbox="image"
+                <a href="/categories/perfumes.html" 
                   ><img src="assets/images/album/perfume.jpg" alt=""
                 /></a>
                 <div class="img-hover-detail">
                   <small class="text-light ls1 t300">Exquisite</small>
                   <h3 class="img-hover-title"><a href="#">Perfumes</a></h3>
                   <div class="img-link">
-                    <a href="#"><i class="icon-line-arrow-right"></i></a>
+                    <a href="/categories/perfumes.html"><i class="icon-line-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Photographs
-  ============================================= -->
+            
             <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
               <div class="img-hover-card">
-                <a href="assets/images/album/detox.jpg" data-lightbox="image"
+                <a href="/categories/lotions.html" 
+                  ><img src="assets/images/album/body lotion.jpg" alt=""
+                /></a>
+                <div class="img-hover-detail">
+                  <small class="text-light ls1 t300">Sweet</small>
+                  <h3 class="img-hover-title"><a href="#">Skin Care</a></h3>
+                  <div class="img-link">
+                    <a href="/categories/lotions.html"><i class="icon-line-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
+              <div class="img-hover-card">
+                <a href="/categories/detox.html" 
                   ><img src="assets/images/album/detox.jpg" alt=""
                 /></a>
                 <div class="img-hover-detail">
                   <small class="text-light ls1 t300">Natural</small>
                   <h3 class="img-hover-title"><a href="#">Detox Facial Scrub Cleansers</a></h3>
                   <div class="img-link">
-                    <a href="#"><i class="icon-line-arrow-right"></i></a>
+                    <a href="/categories/detox.html"><i class="icon-line-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
             </div>
+            
+
+            <!-- Photographs
+  ============================================= -->
+
             <!-- Photographs
   ============================================= -->
             <!-- <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
@@ -662,7 +673,6 @@
 
 	<!-- External JavaScripts
 	============================================= -->
-	<script src="/assets/js/jquery.js"></script>
 	<script src="/assets/js/plugins.js"></script>
 
 	<!-- Photograph Hover Plugin

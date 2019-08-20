@@ -14,12 +14,12 @@ layout: default
     <div class="content-wrap notoppadding">
       <!-- Flip Card Sections
   ============================================= -->
-      <div class="section notopmargin">
+      <div id="products" class="section notopmargin">
         <div class="container clearfix">
           <div class="justify-content-between">
             <div class="col-lg-6 offset-md-1 mb-4">
               <small class="text-muted uppercase t300 ls3 d-block"
-                >Some of Featured Pictures</small
+                >Some of Featured Items</small
               >
               <h2 class="t700 ls0 mb-3" style="font-size: 46px;">
                 Products.
@@ -35,20 +35,20 @@ layout: default
               <div class="col-lg-2 col-md-3 col-6 px-2">
                 <div class="product iproduct clearfix">
                   <div class="product-image">
-                    <a href="#" 
+                    <a href="{{ product.url }}" 
                       ><img src="{{ product.image }}" alt="Image 1"
                     /></a>
-                    <a href="/products{{jergins}}"
+                    <a href="{{product.url}}"
                       ><img src="{{ product.image }}" alt="Image 1"
                     /></a>
                     <div class="sale-flash">Sale!</div>
                     <div class="product-overlay">
-                      <a href="#" class="add-to-cart"
+                      <a href="{{ product.purchase-url }}" class="add-to-cart"
                         ><i class="icon-shopping-cart"></i
                         ><span> Add to Cart</span></a
                       >
                       <a
-                        href="products/{{ product.name }}"
+                        href="{{ product.url }}"
                         class="item-quick-view"
                         data-lightbox="ajax"
                         ><i class="icon-line-search"></i
@@ -56,9 +56,9 @@ layout: default
                       >
                     </div>
                   </div>
-                  <div class="product-desc">
+                  <div class="product-desc center">
                     <div class="product-title mb-1">
-                      <h3><a href="#">{{ product.name }}</a></h3>
+                      <h3><a href="{{ product.url }}">{{ product.name }}</a></h3>
                     </div>
                     <div class="product-price font-primary">
                       <del class="mr-1"></del> <ins>{{ product.price }}</ins>
@@ -90,82 +90,41 @@ layout: default
         <div class="container">
           <div class="col-lg-6 offset-lg-1 mb-5">
             <small class="text-muted uppercase t300 ls3 d-block"
-              >Some of Featured Pictures</small
+              >What we provide</small
             >
             <h2 class="t700 ls0 mb-3" style="font-size: 46px;">
               Categories.
             </h2>
-            <p class="text-muted" style="font-size: 16px;">
+            <!-- <p class="text-muted" style="font-size: 16px;">
               Simple ladies, you will be sweet and sexy for him. Love it, take
               it, wear it and be the centre of his attention.
-            </p>
+            </p> -->
           </div>
 
           <div class="row grid-container clearfix" style="overflow: visible;">
+
             <!-- Photographs
   ============================================= -->
+            {% for category in site.categories reversed %}
             <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
               <div class="img-hover-card">
-                <a href="assets/images/album/soap.jpg" data-lightbox="image"
-                  ><img src="assets/images/album/soap.jpg" alt=""
+                <a href="{{ category.url }}" 
+                  ><img src="{{ category.image }}" alt=""
                 /></a>
                 <div class="img-hover-detail">
-                  <small class="text-light ls1 t300">Scented</small>
-                  <h3 class="img-hover-title"><a href="#">Soaps</a></h3>
+                  <small class="text-light ls1 t300">{{ category.pretext }}</small>
+                  <h3 class="img-hover-title"><a href="#">{{ category.name }}</a></h3>
                   <div class="img-link">
-                    <a href="#"><i class="icon-line-arrow-right"></i></a>
+                    <a href="{{ category.url }}"><i class="icon-line-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
             </div>
+            {% endfor %}
+
             <!-- Photographs
   ============================================= -->
-            <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
-              <div class="img-hover-card">
-                <a href="assets/images/album/body lotion.jpg" data-lightbox="image"
-                  ><img src="assets/images/album/body lotion.jpg" alt=""
-                /></a>
-                <div class="img-hover-detail">
-                  <small class="text-light ls1 t300">Sweet</small>
-                  <h3 class="img-hover-title"><a href="#">Body Lotions</a></h3>
-                  <div class="img-link">
-                    <a href="#"><i class="icon-line-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Photographs
-  ============================================= -->
-            <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
-              <div class="img-hover-card">
-                <a href="assets/images/album/perfume.jpg" data-lightbox="image"
-                  ><img src="assets/images/album/perfume.jpg" alt=""
-                /></a>
-                <div class="img-hover-detail">
-                  <small class="text-light ls1 t300">Exquisite</small>
-                  <h3 class="img-hover-title"><a href="#">Perfumes</a></h3>
-                  <div class="img-link">
-                    <a href="#"><i class="icon-line-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Photographs
-  ============================================= -->
-            <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
-              <div class="img-hover-card">
-                <a href="assets/images/album/detox.jpg" data-lightbox="image"
-                  ><img src="assets/images/album/detox.jpg" alt=""
-                /></a>
-                <div class="img-hover-detail">
-                  <small class="text-light ls1 t300">Natural</small>
-                  <h3 class="img-hover-title"><a href="#">Detox Facial Scrub Cleansers</a></h3>
-                  <div class="img-link">
-                    <a href="#"><i class="icon-line-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+
             <!-- Photographs
   ============================================= -->
             <!-- <div class="col-lg-4 col-sm-6 mb-4 rounded img-hover-wrap">
