@@ -81,7 +81,18 @@
 <title>Simple Sweet Solutions</title>
 
 
-    
+    <!-- Netlify Identity Auth Service -->
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
   </head>
 
   <body class="layout--home"
@@ -666,6 +677,16 @@
     </div>
 
     
+	<script>
+
+		// Hover Script
+		jQuery(".img-hover-wrap").hover3d({
+			selector: ".img-hover-card",
+			shine: false,
+		});
+
+	</script>
+
 	<!-- Go To Top
 	============================================= -->
 	<div id="gotoTop" class="icon-angle-up bgcolor"></div>
@@ -687,15 +708,8 @@
 	============================================= -->
 	<script src="/assets/js/functions.js"></script>
 
-	<script>
-
-		// Hover Script
-		jQuery(".img-hover-wrap").hover3d({
-			selector: ".img-hover-card",
-			shine: false,
-		});
-
-	</script>
+	<!-- Netlify Indentity Widget to handle Authentication-->
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   </body>
 </html>

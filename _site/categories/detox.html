@@ -21,7 +21,7 @@
 
 
 
-  <meta property="article:published_time" content="2019-08-20T13:21:25-04:00">
+  <meta property="article:published_time" content="2019-08-20T16:49:05-04:00">
 
 
 
@@ -85,7 +85,18 @@
 <title>Simple Sweet Solutions</title>
 
 
-    
+    <!-- Netlify Identity Auth Service -->
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
   </head>
 
   <body class="layout--category"
@@ -190,7 +201,7 @@
               <!-- Shop Item 
                 ============================================= -->
 						
-							<div class="product sf- clearfix">
+							<div class="product sf-skin-care clearfix">
 								<div class="product-image">
 									<a href="/products/lotion.html"><img src="/assets/images/album/jergens.jpg" alt="Checked Short Dress"></a>
 									<!-- <div class="sale-flash">50% Off*</div> -->
@@ -360,6 +371,16 @@
     </div>
 
     
+	<script>
+
+		// Hover Script
+		jQuery(".img-hover-wrap").hover3d({
+			selector: ".img-hover-card",
+			shine: false,
+		});
+
+	</script>
+
 	<!-- Go To Top
 	============================================= -->
 	<div id="gotoTop" class="icon-angle-up bgcolor"></div>
@@ -381,15 +402,8 @@
 	============================================= -->
 	<script src="/assets/js/functions.js"></script>
 
-	<script>
-
-		// Hover Script
-		jQuery(".img-hover-wrap").hover3d({
-			selector: ".img-hover-card",
-			shine: false,
-		});
-
-	</script>
+	<!-- Netlify Indentity Widget to handle Authentication-->
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   </body>
 </html>

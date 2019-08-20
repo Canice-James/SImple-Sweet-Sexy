@@ -1,0 +1,32 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+media_folder: "assets/uploads" # Media files will be stored here
+
+
+collections:
+  - name: "categories" 
+    label: "Categories" 
+    folder: "_categories" 
+    create: true 
+    slug: "{{slug}}" 
+    fields: 
+      - {label: "Name", name: "name", widget: "text", required: true}
+      - {label: "link", name: "link", widget: "string", required: true}
+      - {label: "Pretext", name: "pretext", widget: "text", description: "Flavour text adjective"}
+      - {label: "Image", name: "image", widget: "image", required: true}
+  - name: "products" 
+    label: "Products" 
+    folder: "_products" 
+    create: true 
+    slug: "{{slug}}" 
+    fields: 
+      - {label: "Name", name: "Name", widget: "text", required: true}
+      - {label: "Description", name: "description", widget: "text", required: true}
+      - {label: "Image", name: "image", widget: "image", required: true}
+      - {label: "Price", name: "price", widget: "text", required: true}
+      - {label: "Purchase URL", name: "purchase-url", widget: "string", required: false, default: '#'}
+      - {label: "Display Category", name: "category", widget: "relation", collection: "categories", searchFields: "name", valueFields: "name"}
+      - {label: "Functional Category", name: "category-link", widget: "relation", collection: "categories", searchFields: "name", valueFields: "link"}
+
