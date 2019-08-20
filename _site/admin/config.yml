@@ -8,7 +8,7 @@ media_folder: "assets/uploads" # Media files will be stored here
 collections:
   - name: "categories" 
     label: "Categories" 
-    folder: "_categories" 
+    folder: "_categories/" 
     create: true 
     slug: "{{slug}}" 
     fields: 
@@ -18,7 +18,7 @@ collections:
       - {label: "Image", name: "image", widget: "image", required: true}
   - name: "products" 
     label: "Products" 
-    folder: "_products" 
+    folder: "_products/" 
     create: true 
     slug: "{{slug}}" 
     fields: 
