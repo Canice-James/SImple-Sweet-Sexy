@@ -29,7 +29,8 @@ collections:
       - {label: "Image", name: "image", widget: "image", required: true}
       - {label: "Price", name: "price", widget: "text", required: true}
       - {label: "Purchase URL", name: "purchase-url", widget: "string", required: false, default: '#'}
-      - {label: "Post Author", name: "category", widget: "relation", collection: "categories", searchFields: ["name", "link"], valueField: "name", displayFields: ["name", "link"]}
+      - {label: "Display Category", name: "category", widget: "relation", collection: "categories", searchFields: ["name", "link"], valueField: "name", displayFields: ["name", "link"]}
+      - {label: "Functional Category", name: "category-link", widget: "relation", collection: "categories", searchFields: ["name", "link"], valueField: "link", displayFields: ["name", "link"]}
       #- {label: "Display Category", name: "category", widget: "relation", collection: "categories", searchFields: "name", valueFields: "name", required: false}
 
       #- {label: "Functional Category", name: "category-link", widget: "relation", collection: "categories", searchFields: "name", valueFields: "link", required: false}
