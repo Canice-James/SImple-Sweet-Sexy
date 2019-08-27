@@ -21,6 +21,8 @@
 
 
 
+  <meta property="article:published_time" content="2019-08-27T12:38:09-04:00">
+
 
 
 
@@ -53,7 +55,7 @@
 <link rel="stylesheet" href="/assets/css/dark.css" type="text/css" />
 
 <link rel="stylesheet" href="/assets/css/font-icons.css" type="text/css" />
-<link rel="stylesheet" href="/one-page/css/et-line.css" type="text/css" />
+<link rel="stylesheet" href="/assets/css/et-line.css" type="text/css" />
 <link rel="stylesheet" href="/assets/css/animate.css" type="text/css" />
 <link rel="stylesheet" href="/assets/css/magnific-popup.css" type="text/css" />
 
@@ -103,7 +105,7 @@
 
   <body class="layout--product"
   class="stretched"
-  data-loader-html="<div><img src='/images/icons/loader.svg' alt='Loader'></div>">
+  >
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -131,10 +133,9 @@
       </div>
       <div class="global-menu">
         <div class="global-menu__wrap">
-          <a class="global-menu__item" href="#">Home</a>
-          <a class="global-menu__item" href="#">Photography</a>
-          <a class="global-menu__item" href="#">About</a>
-          <a class="global-menu__item" href="#">Contact</a>
+          <a class="global-menu__item" href="/index.html">Home</a>
+          <a class="global-menu__item" href="/products">Products</a>
+          <a class="global-menu__item" href="/contact">Contact</a>
         </div>
       </div>
       <svg
@@ -637,15 +638,6 @@
     </div>
 
     
-	<script>
-
-		// Hover Script
-		jQuery(".img-hover-wrap").hover3d({
-			selector: ".img-hover-card",
-			shine: false,
-		});
-
-	</script>
 
 	<!-- Go To Top
 	============================================= -->
@@ -658,7 +650,7 @@
 
 	<!-- Photograph Hover Plugin
 	============================================= -->
-	<script src="/demos/writer/js/hover3d.js" ></script>
+	<script src="/assets/js/hover3d.js" ></script>
 
 	<!-- Menu Open Plugin
 	============================================= -->
@@ -670,6 +662,17 @@
 
 	<!-- Netlify Indentity Widget to handle Authentication-->
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+
+	<script>
+
+		// Hover Script
+		jQuery(".img-hover-wrap").hover3d({
+			selector: ".img-hover-card",
+			shine: false,
+		});
+
+	</script>
 
   </body>
 </html>

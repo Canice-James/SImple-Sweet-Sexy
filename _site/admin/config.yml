@@ -15,7 +15,7 @@ collections:
     fields: 
       - {label: "Name", name: "name", widget: "text", required: true}
       - {label: "link", name: "link", widget: "string", required: true}
-      - {label: "Pretext", name: "pretext", widget: "text", description: "Flavour text adjective"}
+      - {label: "Pretext", name: "pretext", widget: "text", hint: "Flavour text adjective"}
       - {label: "Image", name: "image", widget: "image", required: true}
   - name: "products" 
     label: "Products" 
@@ -29,6 +29,9 @@ collections:
       - {label: "Image", name: "image", widget: "image", required: true}
       - {label: "Price", name: "price", widget: "text", required: true}
       - {label: "Purchase URL", name: "purchase-url", widget: "string", required: false, default: '#'}
-      - {label: "Display Category", name: "category", widget: "relation", collection: "categories", searchFields: "name", valueFields: "name", default: false}
-      - {label: "Functional Category", name: "category-link", widget: "relation", collection: "categories", searchFields: "name", valueFields: "link", default: false}
+      - {label: "Display Category", name: "category", widget: "relation", collection: "categories", searchFields: ["name", "link"], valueField: "name", displayFields: ["name", "link"]}
+      - {label: "Functional Category", name: "category-link", widget: "relation", collection: "categories", searchFields: ["name", "link"], valueField: "link", displayFields: ["name", "link"]}
+      #- {label: "Display Category", name: "category", widget: "relation", collection: "categories", searchFields: "name", valueFields: "name", required: false}
+
+      #- {label: "Functional Category", name: "category-link", widget: "relation", collection: "categories", searchFields: "name", valueFields: "link", required: false}
 
