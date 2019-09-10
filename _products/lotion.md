@@ -1,7 +1,7 @@
 ---
 name: Jergens
 description: Number 1 Lotion Brand
-image: /assets/uploads/diabetes.jpg
+image: /assets/uploads/logo.png
 price: '33.50'
 purchase-url: ''
 category: Skin Care
