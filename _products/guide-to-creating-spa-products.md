@@ -1,5 +1,7 @@
 ---
 name: Guide to Creating Spa Products
+layout: product
+
 description: |-
   Make beauty products at home for fun and profit.
   Make money. Make sense???

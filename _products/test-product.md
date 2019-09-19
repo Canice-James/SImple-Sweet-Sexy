@@ -1,5 +1,6 @@
 ---
 name: test product
+layout: product
 description: some description
 image: /assets/uploads/diabetes.jpg
 price: '22'

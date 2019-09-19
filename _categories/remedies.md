@@ -1,4 +1,5 @@
 ---
+layout: category
 name: Remedies
 link: Natural
 pretext: Your Solution

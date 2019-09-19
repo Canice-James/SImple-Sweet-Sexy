@@ -1,5 +1,6 @@
 ---
 name: Halki Diabetes Remedy
+layout: product
 description: >-
   This remedy reverses diabetes and helps you to lose weight. A natural blend
   which will enhance your life to the fullest!!

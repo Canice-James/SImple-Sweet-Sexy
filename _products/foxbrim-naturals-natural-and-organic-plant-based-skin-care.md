@@ -1,5 +1,6 @@
 ---
 name: Foxbrim Naturals- Natural and Organic Plant Based Skin Care
+layout: product
 description: >-
   Get rid of wrinkles that etch deep into your skin. Also the dark circles and
   sagging under your eyes.  

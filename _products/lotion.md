@@ -1,5 +1,6 @@
 ---
 name: Jergens
+layout: product
 description: Number 1 Lotion Brand
 image: /assets/uploads/logo.png
 price: '33.50'

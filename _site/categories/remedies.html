@@ -4,20 +4,24 @@
     <meta charset="utf-8" />
 
 <!-- begin _includes/seo.html --><title>Simple Sweet Solutions</title>
-<meta name="description" content="Women’s fashion and health online store">
+<meta name="description" content="">
 
 <meta property="og:type" content="">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Simple Sweet Solutions">
-<meta property="og:title" content="Simple Sweet Solutions">
+<meta property="og:title" content="Remedies">
 <meta property="og:url" content="">
 
 
+  <meta property="og:description" content="">
 
 
 
 
 
+
+
+  <meta property="article:published_time" content="2019-09-19T11:27:13-04:00">
 
 
 
@@ -99,7 +103,7 @@
 </script>
   </head>
 
-  <body class="layout--default"
+  <body class="layout--category"
   class="stretched"
   >
 
@@ -152,7 +156,7 @@
   
 <!-- <div id="banner">
   <div class="h-100 d-flex justify-content-center" data-bs-parallax-bg="true" style="background-image:url('');background-position:center;background-size:cover;">
-    <h1 class="align-self-center text-center text-light">  </h1>
+    <h1 class="align-self-center text-center text-light"> Remedies </h1>
   </div>
 </div> -->
 
@@ -372,7 +376,7 @@
 								<h4>Select Category</h4>
 								<ul class="custom-filter" data-container="#shop" data-active-class="active-filter">
 
-									<li class="widget-filter-reset active-filter"><a href="#" data-filter="*">Clear</a></li>
+									<li class="widget-filter-reset"><a href="#" data-filter="*">Clear</a></li>
 
 									
 									<li class=""><a href="#" data-filter=".sf-Clothing" >Clothing and Accessories</a></li>
@@ -383,7 +387,7 @@
 									
 									<li class=""><a href="#" data-filter=".sf-perfume" >Perfumes</a></li>
 									
-									<li class=""><a href="#" data-filter=".sf-Natural" >Remedies</a></li>
+									<li class="active-filter"><a href="#" data-filter=".sf-Natural" >Remedies</a></li>
 									
 									<li class=""><a href="#" data-filter=".sf-soap" >Soaps</a></li>
 									
@@ -468,6 +472,9 @@
 			$('#shop').isotope({ sortBy: sortByValue });
 			return false;
 		});
+
+		$('#shop').isotope({filter: '.sf-Natural'});
+
 	});
 </script>
 

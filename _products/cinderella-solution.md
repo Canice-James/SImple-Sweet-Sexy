@@ -1,5 +1,6 @@
 ---
 name: Cinderella Solution
+layout: product
 description: >-
   Every woman deserves to look good for her Mr. Right. If you want these extra
   pounds shed... voila
