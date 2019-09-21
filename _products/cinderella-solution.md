@@ -6,7 +6,7 @@ description: >-
   pounds shed... voila
 image: /assets/uploads/7.2displayonly-crop-1-.png
 price: $34.56
-purchase-url: '#https://1dcd2jyctdmjyncd2e-2tkix1y.hop.clickbank.net/?tid='
+purchase-url: 'https://1dcd2jyctdmjyncd2e-2tkix1y.hop.clickbank.net/?tid='
 category: Remedies
 category-link: Natural
 ---
